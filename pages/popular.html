@@ -3,17 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOHINUR STORE || HOME</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <title>MOHINUR STORE || POPULAR</title>
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/popular.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- HEADER START -->
       <div class="header-top">
         <div class="header-top-content">
           <a class="header-top-content-text">Help</a>
@@ -29,10 +27,10 @@
         <div class="menu">
           <ul class="menu-ul">
             <li class="menu-ul-list">
-              <a href="./index.html" class="menu-ul-list-a">Home</a>
+              <a href="../index.html" class="menu-ul-list-a">Home</a>
             </li>
             <li class="menu-ul-list">
-              <a href="./pages/popular.html" class="menu-ul-list-a">Popular</a>
+              <a href="./popular.html" class="menu-ul-list-a">Popular</a>
             </li>
             <li class="menu-ul-list">
               <a href="#" class="menu-ul-list-a">Groceries</a>
@@ -48,21 +46,21 @@
             <a class="menu-img-a" href="">
               <img
                 class="menu-img-a-img"
-                src="./images/header/message.svg"
+                src="../images/header/message.svg"
                 alt=""
               />
             </a>
             <a class="menu-img-a" href="">
               <img
                 class="menu-img-a-img"
-                src="./images/header/like.svg"
+                src="../images/header/like.svg"
                 alt=""
               />
             </a>
             <a class="menu-img-a" href="">
               <img
                 class="menu-img-a-img"
-                src="./images/header/store.svg"
+                src="../images/header/store.svg"
                 alt=""
               />
             </a>
@@ -75,147 +73,143 @@
         </div>
       </header>
       <!-- HEADER END -->
-
       <!-- MAIN START -->
-      <main class="main">
-        <div class="main-top">
-          <div class="main-top-content">
-            <h1 class="main-top-h1">Mohinur</h1>
-            <p class="main-top-text">
-              <span class="main-top-span">PUBLIC HIGH</span> GUM NATURAL
+
+      <section class="main-middle">
+        <div class="mm-popular-top">
+          <div class="mm-popular-header">
+            <p class="mm-popular-header-p">
+              <span class="mm-popular-header-p-span">Groceries</span> popular
             </p>
-            <p class="main-top-text-p">
-              It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing
-            </p>
-            <button class="main-top-btn">Shop Now</button>
+          </div>
+          <div class="mm-popular-items">
+            <div id="mm-popular-card-top" class="mm-popular-card-frames">
+              <template id="mm-temp-top" class="mm-temp-top">
+                <div class="mm-card">
+                  <p class="mm-percent">Rp 0</p>
+                  <img
+                    class="mm-card-img"
+                    src="../images/index/shoe-discount-4.png"
+                    alt=""
+                  />
+
+                  <h1 class="mm-card-title">
+                    Vantela Evil X Papa Gading Black Natural
+                  </h1>
+                  <p class="mm-old-price">Rp 415000</p>
+                  <p class="mm-new-price">Rp 415000</p>
+                  <div class="mm-card-rating">
+                    <div class="mm-card-rating-left">
+                      <img
+                        class="mm-rating-img"
+                        src="../images/index/star.svg"
+                        alt=""
+                      />
+                      <div class="mm-card-rating-numbers">
+                        <p class="mm-rating r-text">4.5</p>
+                        <p class="mm-rating-slash r-text">/</p>
+                        <p class="mm-rating-max r-text">5</p>
+                      </div>
+                    </div>
+
+                    <button class="mm-card-btn">More</button>
+                  </div>
+                </div>
+              </template>
+            </div>
           </div>
         </div>
-        <section class="main-middle">
-          <div class="popular">
-            <div class="popular-header">
-              <p class="popular-header-p">
-                <span class="popular-header-p-span">Most</span> popular
-              </p>
-              <div class="popular-content">
-                <a class="popular-content-a" href="#">
-                  <img
-                    src="./images/index/teenyicons_right-outline.png"
-                    alt=""
-                  />
-                </a>
-                <a class="popular-content-a" href="#">
-                  <img
-                    src="./images/index/teenyicons_left-outline.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="popular-items">
-              <div id="popular-card" class="popular-card-frames">
-                <template id="temp-popular" class="temp-popular">
-                  <div class="card">
-                    <img
-                      class="card-img"
-                      src="./images/index/shoe-1.png"
-                      alt=""
-                    />
-                    <h1 class="card-title">
-                      Vantela Republic Low Black Natural
-                    </h1>
-                    <p class="price">Rp 159000</p>
-                    <div class="card-rating">
-                      <div class="card-rating-left">
-                        <img
-                          class="rating-img"
-                          src="./images/index/star.svg"
-                          alt=""
-                        />
-                        <div class="card-rating-numbers">
-                          <p class="rating r-text">4.5</p>
-                          <p class="rating-slash r-text">/</p>
-                          <p class="rating-max r-text">5</p>
-                        </div>
-                      </div>
 
-                      <button class="card-btn">Shop Now</button>
+        <div class="mm-popular-top">
+          <div class="mm-popular-header">
+            <p class="mm-popular-header-p">
+              <span class="mm-popular-header-p-span">Kitchen-accessories</span>
+              popular
+            </p>
+          </div>
+          <div class="mm-popular-items">
+            <div id="mm-popular-card-middle" class="mm-popular-card-frames">
+              <template id="mm-temp-middle" class="mm-temp-middle">
+                <div class="mm-card">
+                  <p class="mm-percent">Rp 0</p>
+                  <img
+                    class="mm-card-img"
+                    src="../images/index/shoe-discount-4.png"
+                    alt=""
+                  />
+
+                  <h1 class="mm-card-title">
+                    Vantela Evil X Papa Gading Black Natural
+                  </h1>
+                  <p class="mm-old-price">Rp 415000</p>
+                  <p class="mm-new-price">Rp 415000</p>
+                  <div class="mm-card-rating">
+                    <div class="mm-card-rating-left">
+                      <img
+                        class="mm-rating-img"
+                        src="../images/index/star.svg"
+                        alt=""
+                      />
+                      <div class="mm-card-rating-numbers">
+                        <p class="mm-rating r-text">4.5</p>
+                        <p class="mm-rating-slash r-text">/</p>
+                        <p class="mm-rating-max r-text">5</p>
+                      </div>
                     </div>
+
+                    <button class="mm-card-btn">More</button>
                   </div>
-                </template>
-              </div>
+                </div>
+              </template>
             </div>
           </div>
-
-          <div class="popular discount">
-            <div class="popular-header">
-              <p class="popular-header-p">
-                <span class="popular-header-p-span">On</span> sale
-              </p>
-              <div class="popular-content">
-                <a class="popular-content-a" href="#">
-                  <img
-                    src="./images/index/teenyicons_right-outline.png"
-                    alt=""
-                  />
-                </a>
-                <a class="popular-content-a" href="#">
-                  <img
-                    src="./images/index/teenyicons_left-outline.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="popular-items">
-              <div id="discount-card" class="popular-card-frames">
-                <template id="temp-discount" class="temp-discount">
-                  <div class="discount-card">
-                    <p class="discount-percent">Rp 415000</p>
-                    <img
-                      class="card-img"
-                      src="./images/index/shoe-discount-4.png"
-                      alt=""
-                    />
-
-                    <h1 class="card-title">
-                      Vantela Evil X Papa Gading Black Natural
-                    </h1>
-                    <p class="old-price">Rp 415000</p>
-                    <p class="new-price">Rp 415000</p>
-                    <div class="card-rating">
-                      <div class="card-rating-left">
-                        <img
-                          class="rating-img"
-                          src="./images/index/star.svg"
-                          alt=""
-                        />
-                        <div class="card-rating-numbers">
-                          <p class="rating r-text">4.5</p>
-                          <p class="rating-slash r-text">/</p>
-                          <p class="rating-max r-text">5</p>
-                        </div>
-                      </div>
-
-                      <button class="card-btn">Shop Now</button>
-                    </div>
-                  </div>
-                </template>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="main-bottom">
-          <img
-            class="main-bottom-img"
-            src="./images/index/Frame 180.png"
-            alt=""
-          />
         </div>
-      </main>
+
+        <div class="mm-popular-top">
+          <div class="mm-popular-header">
+            <p class="mm-popular-header-p">
+              <span class="mm-popular-header-p-span">SmartPhones</span> popular
+            </p>
+          </div>
+          <div class="mm-popular-items">
+            <div id="mm-popular-card-bottom" class="mm-popular-card-frames">
+              <template id="mm-temp-bottom" class="mm-temp-middle">
+                <div class="mm-card">
+                  <p class="mm-percent">Rp 0</p>
+                  <img
+                    class="mm-card-img"
+                    src="../images/index/shoe-discount-4.png"
+                    alt=""
+                  />
+
+                  <h1 class="mm-card-title">
+                    Vantela Evil X Papa Gading Black Natural
+                  </h1>
+                  <p class="mm-old-price">Rp 415000</p>
+                  <p class="mm-new-price">Rp 415000</p>
+                  <div class="mm-card-rating">
+                    <div class="mm-card-rating-left">
+                      <img
+                        class="mm-rating-img"
+                        src="../images/index/star.svg"
+                        alt=""
+                      />
+                      <div class="mm-card-rating-numbers">
+                        <p class="mm-rating r-text">4.5</p>
+                        <p class="mm-rating-slash r-text">/</p>
+                        <p class="mm-rating-max r-text">5</p>
+                      </div>
+                    </div>
+
+                    <button class="mm-card-btn">More</button>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- MAIN END -->
-
       <!-- FOOTER START -->
       <footer class="footer">
         <div class="footer-top">
@@ -229,7 +223,7 @@
             <a href="#" class="footer-top-input-a">
               <img
                 class="footer-top-input-img"
-                src="./images/footer/Vector.svg"
+                src="../images/footer/Vector.svg"
                 alt=""
               />
             </a>
@@ -281,17 +275,17 @@
                 <li class="footer-list footer-li">
                   <img
                     class="footer-list-img"
-                    src="./images/footer/fb.svg"
+                    src="../images/footer/fb.svg"
                     alt=""
                   />
                   <a href="#" class="footer-list-a">Facebook</a>
                 </li>
                 <li class="footer-list footer-li">
-                  <img src="./images/footer/tiktok.svg" alt="" />
+                  <img src="../images/footer/tiktok.svg" alt="" />
                   <a href="#" class="footer-list-a">Tik-Tok</a>
                 </li>
                 <li class="footer-list footer-li">
-                  <img src="./images/footer/Instagram.svg" alt="" />
+                  <img src="../images/footer/Instagram.svg" alt="" />
                   <a href="#" class="footer-list-a">Instagram</a>
                 </li>
               </ul>
@@ -330,8 +324,9 @@
           <p class="footer-bottom-text">Copyright 2023. All Right Reserverd</p>
         </div>
       </footer>
-      <!-- FOOTER END -->
     </div>
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="../js/popular.js"></script>
+    <script type="module" src="../js/request.js"></script>
+    <script type="module" src="../js/loading.js"></script>
   </body>
 </html>
