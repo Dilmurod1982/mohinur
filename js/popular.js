@@ -27,9 +27,9 @@ const updateUI = (products) => {
       mmPercent.textContent = `Disc${Math.round(prod.discountPercentage)}%`;
       mmTitle.textContent = prod.title;
       mmOldPrice.textContent = prod.price;
-      mmNewPrice.textContent = Math.round(
-        (prod.price / 100) * (100 - prod.discountPercentage)
-      );
+      const newPriceFixed =
+        (prod.price / 100) * (100 - prod.discountPercentage);
+      mmNewPrice.textContent = newPriceFixed.toFixed(2);
       mmRating.textContent = prod.rating;
 
       cardBtn.href = `../pages/product.html?id=${prod.id}`;
@@ -56,9 +56,9 @@ const updateUI = (products) => {
       mmPercent.textContent = `Disc${Math.round(prod.discountPercentage)}%`;
       mmTitle.textContent = prod.title;
       mmOldPrice.textContent = prod.price;
-      mmNewPrice.textContent = Math.round(
-        (prod.price / 100) * (100 - prod.discountPercentage)
-      );
+      const newPriceFixed =
+        (prod.price / 100) * (100 - prod.discountPercentage);
+      mmNewPrice.textContent = newPriceFixed.toFixed(2);
       mmRating.textContent = prod.rating;
 
       cardBtn.href = `../pages/product.html?id=${prod.id}`;
@@ -85,9 +85,9 @@ const updateUI = (products) => {
       mmPercent.textContent = `Disc${Math.round(prod.discountPercentage)}%`;
       mmTitle.textContent = prod.title;
       mmOldPrice.textContent = prod.price;
-      mmNewPrice.textContent = Math.round(
-        (prod.price / 100) * (100 - prod.discountPercentage)
-      );
+      const newPriceFixed =
+        (prod.price / 100) * (100 - prod.discountPercentage);
+      mmNewPrice.textContent = newPriceFixed.toFixed(2);
       mmRating.textContent = prod.rating;
 
       cardBtn.href = `../pages/product.html?id=${prod.id}`;
