@@ -114,7 +114,11 @@
               </div>
             </div>
             <div class="popular-items">
-              <div id="popular-card" class="popular-card-frames">
+              <div
+                id="popular-card"
+                class="popular-card-frames"
+                data-id="{{product.id}}"
+              >
                 <template id="temp-popular" class="temp-popular">
                   <div class="card">
                     <img
@@ -140,7 +144,12 @@
                         </div>
                       </div>
 
-                      <button class="card-btn">Shop Now</button>
+                      <a
+                        id="card-btn"
+                        class="card-btn"
+                        href="./pages/product.html"
+                        >More</a
+                      >
                     </div>
                   </div>
                 </template>
@@ -169,7 +178,11 @@
               </div>
             </div>
             <div class="popular-items">
-              <div id="discount-card" class="popular-card-frames">
+              <div
+                id="discount-card"
+                class="popular-card-frames"
+                data-id="{{product.id}}"
+              >
                 <template id="temp-discount" class="temp-discount">
                   <div class="discount-card">
                     <p class="discount-percent">Rp 415000</p>
@@ -198,7 +211,12 @@
                         </div>
                       </div>
 
-                      <button class="card-btn">Shop Now</button>
+                      <a
+                        id="card-btn"
+                        class="card-btn"
+                        href="./pages/product.html"
+                        >More</a
+                      >
                     </div>
                   </div>
                 </template>

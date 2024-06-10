@@ -21,6 +21,7 @@ const updateUI = (products) => {
       const mmOldPrice = cloneMmTempTop.querySelector(".mm-old-price");
       const mmNewPrice = cloneMmTempTop.querySelector(".mm-new-price");
       const mmRating = cloneMmTempTop.querySelector(".mm-rating");
+      const cardBtn = cloneMmTempTop.querySelector(".mm-card-btn");
 
       mmImg.src = prod.thumbnail;
       mmPercent.textContent = `Disc${Math.round(prod.discountPercentage)}%`;
@@ -30,6 +31,9 @@ const updateUI = (products) => {
         (prod.price / 100) * (100 - prod.discountPercentage)
       );
       mmRating.textContent = prod.rating;
+
+      cardBtn.href = `../pages/product.html?id=${prod.id}`;
+
       mmPopularCardTop.appendChild(cloneMmTempTop);
       console.log(prod);
     });
@@ -46,6 +50,7 @@ const updateUI = (products) => {
       const mmOldPrice = cloneMmTempMidle.querySelector(".mm-old-price");
       const mmNewPrice = cloneMmTempMidle.querySelector(".mm-new-price");
       const mmRating = cloneMmTempMidle.querySelector(".mm-rating");
+      const cardBtn = cloneMmTempMidle.querySelector(".mm-card-btn");
 
       mmImg.src = prod.thumbnail;
       mmPercent.textContent = `Disc${Math.round(prod.discountPercentage)}%`;
@@ -55,6 +60,9 @@ const updateUI = (products) => {
         (prod.price / 100) * (100 - prod.discountPercentage)
       );
       mmRating.textContent = prod.rating;
+
+      cardBtn.href = `../pages/product.html?id=${prod.id}`;
+
       mmPopularCardMiddle.appendChild(cloneMmTempMidle);
       console.log(prod);
     });
@@ -71,6 +79,7 @@ const updateUI = (products) => {
       const mmOldPrice = cloneMmTempBottom.querySelector(".mm-old-price");
       const mmNewPrice = cloneMmTempBottom.querySelector(".mm-new-price");
       const mmRating = cloneMmTempBottom.querySelector(".mm-rating");
+      const cardBtn = cloneMmTempBottom.querySelector(".mm-card-btn");
 
       mmImg.src = prod.thumbnail;
       mmPercent.textContent = `Disc${Math.round(prod.discountPercentage)}%`;
@@ -80,6 +89,9 @@ const updateUI = (products) => {
         (prod.price / 100) * (100 - prod.discountPercentage)
       );
       mmRating.textContent = prod.rating;
+
+      cardBtn.href = `../pages/product.html?id=${prod.id}`;
+
       mmPopularCardBottom.appendChild(cloneMmTempBottom);
       console.log(prod);
     });

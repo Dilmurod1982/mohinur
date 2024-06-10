@@ -147,3 +147,27 @@
   background-color: #ffffff;
   color: #1f3e97;
 }
+
+.mm-card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76.24px;
+  height: 25.12px;
+  background-color: #1f3e97;
+  border: none;
+  border-radius: 30.29px;
+  padding: 6px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 10.6px;
+  line-height: 12.83px;
+  transition: 0.2s;
+}
+
+.mm-card-btn:active {
+  width: 74px;
+  height: 23px;
+  font-size: 9.5px;
+}

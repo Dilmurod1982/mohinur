@@ -17,11 +17,16 @@ const updateUI = (products) => {
       const popularTitle = clonePopular.querySelector(".card-title");
       const popularPrice = clonePopular.querySelector(".price");
       const popularRating = clonePopular.querySelector(".rating");
+      const cardBtn = clonePopular.querySelector(".card-btn");
+      const cardBtnLink = cardBtn.add;
 
       popularImg.src = prod.thumbnail;
       popularTitle.textContent = prod.title;
       popularPrice.textContent = prod.price;
       popularRating.textContent = prod.rating;
+
+      cardBtn.href = `./pages/product.html?id=${prod.id}`;
+
       popularCard.appendChild(clonePopular);
     });
   products
@@ -46,6 +51,9 @@ const updateUI = (products) => {
       popularOldPrice.textContent = prod.price;
       popularNewPrice.textContent =
         (prod.price / 100) * (100 - prod.discountPercentage);
+
+      cardBtn.href = `./pages/product.html?id=${prod.id}`;
+
       discountCard.appendChild(cloneDiscount);
     });
 };
@@ -53,7 +61,7 @@ const updateUI = (products) => {
 getData("https://dummyjson.com/products/?limit=194")
   .then((data) => {
     updateUI(data.products);
-    console.log(data.products);
+    // console.log(data.products);
   })
   .catch((error) => {
     console.log(error);
