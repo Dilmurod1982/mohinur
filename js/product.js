@@ -39,9 +39,9 @@ const updateProductDetailsUI = (product) => {
   productImg.src = product.thumbnail;
   productTitle.textContent = product.title;
   oldPrice.textContent = `Rp ${product.price}`;
-  newPrice.textContent = `Rp ${
-    (product.price / 100) * (100 - product.discountPercentage)
-  }`;
+  const newPriceFixed =
+    (product.price / 100) * (100 - product.discountPercentage);
+  newPrice.textContent = `Rp ${newPriceFixed.toFixed(2)}`;
   discount.textContent = `Disc${Math.round(product.discountPercentage)}%`;
 
   document.getElementById("section").appendChild(sectionContent);

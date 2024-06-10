@@ -50,8 +50,11 @@ const updateUI = (products) => {
       popularImg.src = prod.thumbnail;
       popularTitle.textContent = prod.title;
       popularOldPrice.textContent = prod.price;
-      popularNewPrice.textContent =
+      const popularNewPriceFixed =
         (prod.price / 100) * (100 - prod.discountPercentage);
+      popularNewPrice.textContent = popularNewPriceFixed.toFixed(2);
+      // popularNewPrice.textContent =
+      //   (prod.price / 100) * (100 - prod.discountPercentage);
 
       cardBtn.href = `./pages/product.html?id=${prod.id}`;
 
