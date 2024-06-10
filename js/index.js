@@ -42,6 +42,7 @@ const updateUI = (products) => {
       const popularNewPrice = cloneDiscount.querySelector(".new-price");
       const popularRating = cloneDiscount.querySelector(".rating");
       const discountPercent = cloneDiscount.querySelector(".discount-percent");
+      const cardBtn = cloneDiscount.querySelector(".card-btn");
 
       discountPercent.textContent = `Disc${Math.round(
         prod.discountPercentage
